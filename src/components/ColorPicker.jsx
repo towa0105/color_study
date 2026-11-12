@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './ColorPicker.css'
 
 
 function ColorPicker() {
@@ -11,6 +12,8 @@ function ColorPicker() {
                 />
             </label>
             <span>{color}</span>
+            <h2>回答カラー</h2>
+            <div className="Color_Box" style={{ backgroundColor: color }} />
         </>
     )
 }
