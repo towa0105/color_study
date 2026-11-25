@@ -1,12 +1,14 @@
 import { useState } from "react"
 
-function Answer() {
+function Answer({ onNext }) {
     return (
         <>
             <h1>回答する</h1>
-            <button>回答</button>
+            <button type="button" onClick={onNext}>
+                この色で進む
+            </button>
         </>
     )
 }
 
-export default Answer
+export default Answer;
